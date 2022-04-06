@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  const f = (n) => {
+    let answer = []; // 완전수
+    let temp = []; // 약수
+    let sum = 0;
+
+    for (let i = 1; i <= n; i++) {
+      for (let j = 1; j < i; j++) {
+        if (i % j === 0) {
+          temp.push(j)
+        }
+      }
+      temp.forEach(element => {
+        sum += element
+      })
+
+      if (sum === i) answer.push(i)
+
+      temp = []
+      sum = 0
+    }
+
+    console.log(answer)
+    return answer
+  }
+
+  f(28);
+
+</script>
+
+</body>
+</html>
