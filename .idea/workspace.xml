@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5da7efa-ee20-44d7-99b4-5c2726797e24" name="Changes" comment="완전수">
-      <change afterPath="$PROJECT_DIR$/완주하지 못한 선수/index.html" afterDir="false" />
+    <list default="true" id="f5da7efa-ee20-44d7-99b4-5c2726797e24" name="Changes" comment="계단오르기">
+      <change afterPath="$PROJECT_DIR$/거스름돈/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/계단오르기/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/계단오르기/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="27KLvETLEK6q1A6vrCqddAaQgZc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -31,6 +41,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -52,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649064059880</updated>
       <workItem from="1649064061285" duration="2319000" />
-      <workItem from="1649230010226" duration="2219000" />
+      <workItem from="1649230010226" duration="9666000" />
     </task>
     <task id="LOCAL-00001" summary="완전수">
       <created>1649232403098</created>
@@ -61,7 +72,28 @@
       <option name="project" value="LOCAL" />
       <updated>1649232403098</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="마라톤">
+      <created>1649233601385</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649233601385</updated>
+    </task>
+    <task id="LOCAL-00003" summary="계단오르기">
+      <created>1649295135211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649295135211</updated>
+    </task>
+    <task id="LOCAL-00004" summary="계단오르기">
+      <created>1649295222914</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649295222914</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,7 +111,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="완전수" />
-    <option name="LAST_COMMIT_MESSAGE" value="완전수" />
+    <MESSAGE value="마라톤" />
+    <MESSAGE value="계단오르기" />
+    <option name="LAST_COMMIT_MESSAGE" value="계단오르기" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

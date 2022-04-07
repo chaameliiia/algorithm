@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  // [6, 10, 20, 15, 25, 10, 20] → 75
+
+  const f = (arr) => {
+    const [n, ...rest] = arr;
+    let list = new Array(n);
+
+    list[0] = rest[0];
+    list[1] = Math.max(rest[0] + rest[1], rest[1]);
+    list[2] = Math.max(rest[1] + rest[2], rest[0] + rest[2]);
+
+    for (let i = 3; i < n; i++) {
+      list[i] = Math.max(rest[i] + list[i - 2], rest[i] + rest[i - 1] + list[i - 3])
+    }
+
+    return list[n - 1];
+  }
+  console.log(f([6, 10, 20, 15, 25, 10, 20]));
+</script>
+</body>
+</html>
