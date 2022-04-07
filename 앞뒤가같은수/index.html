@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    // abacde → 3
+    const f = (str) => {
+      let answer = 0;
+      let dp = new Array(str.length).map(i => new Array(str.length))?.fill(false);
+
+      // 1. 나 자신이면 팰린드롬
+      for (let i = 0; i < str.length; i++) {
+        dp[i][i] = true;
+        answer = 1;
+      }
+
+      // 2. 나 === 다음이면 팰린드롬
+      for (let i = 0; i < str.length - 1; i++) {
+        if (str[i] === str[i + 1]) {
+          dp[i][i +1] = true;
+          answer = 2;
+        }
+      }
+
+      // 3. 규칙
+      for (let i = 3; i < str.length; i++) {
+        for (let j = 0; j < str.length - i; j++) {
+          const k = j + i - 1; // 2
+          if (str[j] === str[k] && dp[j + 1][k - 1]) {
+            dp[j][k] = true;
+            answer = Math.max(answer, i);
+          }
+        }
+      }
+
+      return answer
+    }
+
+    console.log(f('abcdcba'))
+  </script>
+</head>
+<body>
+</body>
+</html>
