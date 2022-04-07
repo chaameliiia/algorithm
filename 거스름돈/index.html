@@ -8,8 +8,23 @@
   <title>Document</title>
 </head>
 <body>
-  <script>
+<script>
+  // 5, [1, 2, 5] → 4
+  const f = (n, money) => {
+    let answer = new Array(n + 1).fill(0);
+    answer[0] = 1;
 
-  </script>
+    for (let i = 0; i < money.length; i++) {
+      for (let j = 0; j <= n; j++) {
+        if (j >= money[i]) answer[j] += answer[j - money[i]]
+      }
+    }
+
+    answer.map(i => i % 1000000007);
+
+    return answer
+  }
+  console.log(f(5, [1, 2, 5]))
+</script>
 </body>
 </html>
